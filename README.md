@@ -1,5 +1,5 @@
 # **¡Bienvenido al primer desafío del Challenge Java!**
-## **Descripción **
+## **Descripción**
 Este desafio consiste en crear un conversor de divisas utilizando el lenguaje Java.
 Yo agregué 3 tipos de conversiones más que son:
 - Grados/Radianes.
