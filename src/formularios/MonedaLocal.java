@@ -72,11 +72,13 @@ public class MonedaLocal extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void convertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertirActionPerformed
-        //1 USD = 4,802.48 COP.
-        //1 EUR = 5,066.00 COP.
-        //1 GBP = 5,787.50 COP.
-        //1 JPY = 36.465 COP.
-        //1 KRW = 3,725 COP.
+        // TRM 21 de diciembre de 2022
+
+        //1 USD = 4,769.29 COP.
+        //1 EUR = 5,039.50 COP.
+        //1 GBP = 5,735.00 COP.
+        //1 JPY = 35.92 COP.
+        //1 KRW = 3.70 COP.
 
         if (Menu.caracterNoValido(this.pesos.getText())) {
             this.labelResultado.setText("");
@@ -91,23 +93,23 @@ public class MonedaLocal extends javax.swing.JInternalFrame {
                     break;
                 case 1:
                     this.labelResultado.setText("Dolares:");
-                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 4802.48));
+                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 4769.29));
                     break;
                 case 2:
                     this.labelResultado.setText("Euros:");
-                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 5066.00));
+                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 5039.50));
                     break;
                 case 3:
                     this.labelResultado.setText("Libras:");
-                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 5787.50));
+                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 5735.00));
                     break;
                 case 4:
                     this.labelResultado.setText("Yen:");
-                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 36.465));
+                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 35.92));
                     break;
                 case 5:
                     this.labelResultado.setText("Won:");
-                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 3725.00));
+                    this.resultado.setText(String.format("%.2f", Double.parseDouble(this.pesos.getText()) / 3.70));
                     break;
                 default:
                     throw new AssertionError();

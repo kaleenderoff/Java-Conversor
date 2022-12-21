@@ -71,11 +71,13 @@ public class Divisa extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void convertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertirActionPerformed
-        //1 USD = 4,802.48 COP.
-        //1 EUR = 5,066.00 COP.
-        //1 GBP = 5,787.50 COP.
-        //1 JPY = 36.465 COP.
-        //1 KRW = 3,725 COP.
+        // TRM 21 de diciembre de 2022
+
+        //1 USD = 4,769.29 COP.
+        //1 EUR = 5,039.50 COP.
+        //1 GBP = 5,735.00 COP.
+        //1 JPY = 35.92 COP.
+        //1 KRW = 3.70 COP.
 
         if (Menu.caracterNoValido(this.divisa.getText())) {
             this.pesos.setText("");
@@ -92,19 +94,19 @@ public class Divisa extends javax.swing.JInternalFrame {
                     JOptionPane.showMessageDialog(null, "Por favor elige alguna divisa.");
                     break;
                 case 1:
-                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 4802.48));
+                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 4769.29));
                     break;
                 case 2:
-                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 5066.00));
+                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 5039.50));
                     break;
                 case 3:
-                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 5787.50));
+                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 5735.00));
                     break;
                 case 4:
-                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 36.465));
+                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 35.92));
                     break;
                 case 5:
-                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 3725.00));
+                    this.pesos.setText(String.format("%.2f", Double.parseDouble(this.divisa.getText()) * 3.70));
                     break;
                 default:
                     throw new AssertionError();

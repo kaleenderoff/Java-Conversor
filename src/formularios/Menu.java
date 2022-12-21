@@ -87,6 +87,7 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        desktop.setBackground(new java.awt.Color(0, 0, 0));
         desktop.setMaximumSize(new java.awt.Dimension(488, 365));
         desktop.setMinimumSize(new java.awt.Dimension(488, 365));
 
